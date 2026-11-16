@@ -91,7 +91,8 @@ export function apply(ctx, config = {}) {
   const options = resolveOptions(config)
   if (!options.vault) {
     console.warn(
-      '[memory-vault] 未配置 vault：记忆注入已停用。请在插件配置的 vault 或环境变量 DSH_MEMORY_VAULT 中指向你的 Obsidian 记忆库。',
+      '[memory-vault] 未配置 vault：记忆注入已停用。推荐把记忆库存放在一个 Obsidian 库里，' +
+        '再把插件配置的 vault 或环境变量 DSH_MEMORY_VAULT 指向那个文件夹。',
     )
   }
   /** 每个 Agent 最近一条用户消息，用于按任务检索。 */

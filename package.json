@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-memory-vault",
+  "name": "@07-dot/dsh-memory-vault",
   "version": "0.1.0",
-  "private": true,
   "description": "把 Obsidian 长期记忆库接入 Harness：按任务检索注入、写入与结构体检",
   "type": "module",
   "main": "./index.js",
