@@ -1,0 +1,46 @@
+{
+  "name": "@local/dsh-memory-vault",
+  "version": "0.1.0",
+  "private": true,
+  "description": "把 Obsidian 长期记忆库接入 Harness：按任务检索注入、写入与结构体检",
+  "type": "module",
+  "main": "./index.js",
+  "license": "MIT",
+  "author": "07-dot",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "obsidian",
+    "memory",
+    "llm-context"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/07-dot/dsh-memory-vault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/07-dot/dsh-memory-vault/issues"
+  },
+  "homepage": "https://github.com/07-dot/dsh-memory-vault#readme",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "memory-core.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

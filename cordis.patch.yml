@@ -1,0 +1,10 @@
+# 记忆库路径：填你自己的 Obsidian 记忆库文件夹（Windows 用反斜杠，注意 YAML 单引号内无需转义）
+# 也可以留空，改用环境变量 DSH_MEMORY_VAULT 覆盖
+- insert:
+    - id: memory-vault
+      name: '@local/dsh-memory-vault'
+      config:
+        vault: ''
+        matchCount: 3
+        matchBudget: 1300
+        coreBudget: 900
